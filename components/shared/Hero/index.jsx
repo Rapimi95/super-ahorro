@@ -8,9 +8,8 @@ function Hero() {
         <div className="text-gray-800">
           <h1 className="text-7xl font-bold">Super Ahorro</h1>
           <p className="mt-3 max-w-2xl mx-auto text-xl sm:mt-4">
-            Descripción del supermercado Descripción del supermercado Descripción del supermercado Descripción del
-            supermercado Descripción del supermercado Descripción del supermercado Descripción del supermercado
-            Descripción del supermercado
+            ¡No esperes más y ven a Super Ahorro! Te aseguramos que encontrarás todo lo que necesitas a precios
+            increíbles, y que te llevarás a casa una experiencia de compra única y satisfactoria!
           </p>
         </div>
       </div>
