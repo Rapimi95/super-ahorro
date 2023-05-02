@@ -1,4 +1,5 @@
 import { setCart } from "@/slices/productsSlice";
+import { currency } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +25,7 @@ function CategoryListItem({ item }) {
       </div>
       <div className="relative flex flex-col justify-end items-end h-3/5 p-6">
         <p className="w-full text-center">{item.name}</p>
-        <p className="w-full text-center text-xl font-bold text-green-500 mt-1">{item.price}</p>
+        <p className="w-full text-center text-xl font-bold text-green-500 mt-1">{currency(item.price)}</p>
         <button className="bg-green-500 text-white py-2 px-6 rounded-full mt-4 w-44" onClick={addToCart}>
           Agregar
         </button>
