@@ -1,3 +1,4 @@
+import Main from "@/components/shared/Main";
 import store from "@/store";
 import "@/styles/globals.css";
 import { Provider } from "react-redux";
@@ -8,7 +9,9 @@ export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Navbar />
-      <Component {...pageProps} />
+      <Main>
+        <Component {...pageProps} />
+      </Main>
       <Footer />
     </Provider>
   );
